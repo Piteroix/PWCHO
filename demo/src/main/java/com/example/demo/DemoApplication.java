@@ -20,7 +20,7 @@ public class DemoApplication {
 		Connection connection = null;
 		Statement statement = null;
 		try{
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver");
 			connection = DriverManager.getConnection(DB_URL, USER, PASS);
 			createDataBaseIfNotExists(connection,DB_NAME);
 			statement = connection.createStatement();
