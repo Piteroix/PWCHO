@@ -8,17 +8,13 @@ import java.sql.*;
 @SpringBootApplication
 public class DemoApplication {
 
-	static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-//	static final String DB_URL = "jdbc:mysql://Full2020-86383:3306/demo?useSSL=false&serverTimezone=UTC";
+	static final String DB_URL = "jdbc:mysql://Full2020-86383:3306/demo?useSSL=false&serverTimezone=UTC";
 //	static final String DB_URL = "jdbc:mysql://localhost:3306/demo?useSSL=false&serverTimezone=UTC";
-	static final String DB_URL = "jdbc:mysql://localhost:3306/?serverTimezone=UTC";
+//	static final String DB_URL = "jdbc:mysql://localhost:3306/?serverTimezone=UTC";
 
-//	static final String USER = "ppawlak";
-//	static final String PASS = "ppawlak";
-
+	static final String USER = "ppawlak";
+	static final String PASS = "ppawlak";
 	static final String DB_NAME = "demo";
-	static final String USER = "root";
-	static final String PASS = "kocham123";
 
 	public static void main(String[] args) {
 		Connection connection = null;
