@@ -18,10 +18,12 @@ public class DemoApplication {
 
 	public static void main(String[] args) throws InterruptedException {
 
+		Thread.sleep(40000);
+
 		Connection connection = null;
 		Statement statement = null;
 		try{
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			connection = DriverManager.getConnection(DB_URL, USER, PASS);
 
 			createDataBaseIfNotExists(connection,DB_NAME);
@@ -44,7 +46,6 @@ public class DemoApplication {
 				se.printStackTrace();
 			}
 		}
-		Thread.sleep(8000);
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
